@@ -3,17 +3,17 @@ package br.com.k19.managedbeans;
 import javax.ejb.EJB;
 import javax.faces.bean.ManagedBean;
 
-import br.com.k19.sessionsbeans.LancadorDadoBean;
+import br.com.k19.sesssionBeans.LancadorDeDadoBean;
 
 @ManagedBean
 public class DadoMB {
 	@EJB
-	private LancadorDadoBean lancadorDadoBean;
+	private LancadorDeDadoBean lancadorDeDadoBean;
 	
 	private int resultado;
 	
 	public void lancaDado() {
-		this.resultado = this.lancadorDadoBean.lanca();
+		this.resultado = this.lancadorDeDadoBean.lanca();
 	}
 
 	public int getResultado() {
@@ -23,6 +23,4 @@ public class DadoMB {
 	public void setResultado(int resultado) {
 		this.resultado = resultado;
 	}
-	
-	
 }
