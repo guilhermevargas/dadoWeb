@@ -1,9 +1,11 @@
 package br.com.k19.managedbeans;
 
 import javax.ejb.EJB;
+import javax.faces.bean.ManagedBean;
 
 import br.com.k19.sesssionBeans.LancadorDeDadoBean;
 
+@ManagedBean
 public class DadoMB {
 	@EJB
 	private LancadorDeDadoBean lancadorDeDadoBean;
